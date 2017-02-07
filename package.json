@@ -1,0 +1,23 @@
+{
+  "name": "dockjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcwestlake/dockjs.git"
+  },
+  "author": "Ryan Westlake & Kinan Whyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcwestlake/dockjs/issues"
+  },
+  "homepage": "https://github.com/rcwestlake/dockjs#readme",
+  "devDependencies": {
+    "electron": "^1.4.15"
+  }
+}

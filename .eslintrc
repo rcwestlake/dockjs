@@ -1,0 +1,11 @@
+{
+  "parser": "babel-eslint",
+  "globals": {
+    "jQuery": true,
+    "$": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "semi": "off",
+  }
+}

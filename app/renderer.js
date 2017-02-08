@@ -16,5 +16,6 @@ $runButton.on('click', () => {
   const result = babel.transform(code, {
     presets: ['es2015']
   })
-  console.log(result);
+
+  console.log('result.eval()', eval(result.code));
 })

@@ -12,10 +12,22 @@ const editor = CodeMirror.fromTextArea($input[0], {
 })
 
 $runButton.on('click', () => {
-  const code = editor.getValue()
-  const result = babel.transform(code, {
+  const editorCode = editor.getValue()
+  const result = babel.transform(editorCode, {
     presets: ['es2015']
   })
+  const code = result.code
 
-  console.log('result.eval()', eval(result.code));
+  checkForMaliciousIntent(code)
+  eval(code)
 })
+
+const checkForMaliciousIntent = (code) => {
+  maliciousIntentKeys.map(key => {
+    if(code.includes(key)) {
+      throw new Error('For your safety, we stopped the evaluation process. We detected malicious code.')
+    }
+  })
+}
+
+const maliciousIntentKeys = ['<script>', 'script', '</script>']

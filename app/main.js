@@ -1,9 +1,10 @@
 const { app, BrowserWindow } = require('electron')
+const mock = require('../tests/mocks')
 
 let mainWindow = null
 
 app.on('ready', () => {
-  console.log('app is ready');
+  console.log('app is ready')
   mainWindow = new BrowserWindow({
     maxWidth: 800,
     maxHeight: 600,
@@ -40,3 +41,8 @@ app.on('ready', () => {
 //   'Tray',
 //   'webContents',
 //   'net' ]
+
+
+// if (process.env.SPECTRON) {
+//   mock(dialog)
+// }

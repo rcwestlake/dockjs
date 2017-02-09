@@ -1,3 +1,5 @@
+// const { ipcRenderer, app, remote, shell } = require('electron')
+//potentially use ipcRenderer to resize the window
 const $ = require('jquery')
 const babel = require('babel-core')
 
@@ -6,12 +8,14 @@ const $runButton = $('#run-button')
 const $themeSelector = $('#theme-selector')
 let $chosenTheme = 'mbo'
 const $editor = $('.CodeMirror-scroll')
+const $fullscreenBtn = $('#fullscreen')
 
 const editor = CodeMirror.fromTextArea($input[0], {
   lineNumbers: true,
   lineWrapping: true,
   theme: $chosenTheme,
-  mode: 'javascript'
+  mode: 'javascript',
+  autofocus: true
 })
 
 $themeSelector.on('change', () => {
@@ -28,6 +32,12 @@ $runButton.on('click', () => {
 
   checkForMaliciousIntent(code)
   eval(code)
+})
+
+$fullscreenBtn.on('click', () => {
+  console.log(editor.options);
+  editor.setOption('fullscreen', true)
+  // win.setFullScreen(flag)
 })
 
 const checkForMaliciousIntent = (code) => {

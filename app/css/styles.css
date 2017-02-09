@@ -31,7 +31,7 @@ button {
   background-color: #FF5656;
   border: none;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   width: 60px;
   height: 60px;
@@ -46,8 +46,22 @@ button {
   color: #fff;
 }
 
-#theme-selector {
+select#theme-selector, button {
   /*width: */
-  height: 10%;
-  font-size: 16px;
+  /*height: 10%;*/
+  font-size: 14px;
+  margin: 0px 5px;
+}
+
+.dropdown-container select, button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #4E4E4E;
+  color: #fff;
+  /*background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;*/
+  /*background: transparent;*/
+  height: 30px;
+  overflow: hidden;
+  /*width: 240px;*/
+  border: none;
 }

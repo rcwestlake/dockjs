@@ -22,6 +22,14 @@
 
     <script src="./helpers/codemirror.js"></script>
     <script src="./helpers/javascript.js"></script>
+
+    <script src="./addons/active-line.js"></script>
+    <script src="./addons/annotatescrollbar.js"></script>
+    <script src="./addons/closebrackets.js"></script>
+    <script src="./addons/javascript-hint.js"></script>
+    <script src="./addons/javascript-lint.js"></script>
+    <script src="./addons/matchbrackets.js"></script>
+    <script src="./addons/selection-pointer.js"></script>
   </head>
 
   <body>
@@ -33,22 +41,27 @@
       <button id="run-button">
         RUN<span class="code-symbol">< /></span>
       </button>
-      <select id="theme-selector">
-        <option value="default">Theme</option>
-        <option value="3024-night">3024-night</option>
-        <option value="abcdef">abcdef</option>
-        <option value="blackboard">blackboard</option>
-        <option value="colorforth">colorforth</option>
-        <option value="dracula">dracula</option>
-        <option value="eclipse">eclipse</option>
-        <option value="mbo">mbo</option>
-        <option value="mdn-like">mdn-like</option>
-        <option value="monokai">monokai</option>
-        <option value="neat">neat</option>
-        <option value="seti">seti</option>
-        <option value="solarized">solarized</option>
-        <option value="xq-light">xq-light</option>
-      </select>
+
+      <div class="dropdown-container">
+        <select id="theme-selector">
+          <option value="default">Theme</option>
+          <option value="3024-night">3024-night</option>
+          <option value="abcdef">abcdef</option>
+          <option value="blackboard">blackboard</option>
+          <option value="colorforth">colorforth</option>
+          <option value="dracula">dracula</option>
+          <option value="eclipse">eclipse</option>
+          <option value="mbo">mbo</option>
+          <option value="mdn-like">mdn-like</option>
+          <option value="monokai">monokai</option>
+          <option value="neat">neat</option>
+          <option value="seti">seti</option>
+          <option value="solarized">solarized</option>
+          <option value="xq-light">xq-light</option>
+        </select>
+      </div>
+
+      <button id="fullscreen">FullScreen</button>
     </footer>
 
     <script>require('./renderer.js')</script>

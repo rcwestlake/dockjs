@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>dockjs</title>
+    <title>DockJS</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/codemirror.css">
+
     <link rel="stylesheet" href="./helpers/themes/3024-night.css">
     <link rel="stylesheet" href="./helpers/themes/abcdef.css">
     <link rel="stylesheet" href="./helpers/themes/blackboard.css">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./helpers/themes/seti.css">
     <link rel="stylesheet" href="./helpers/themes/solarized.css">
     <link rel="stylesheet" href="./helpers/themes/xq-light.css">
+
     <script src="./helpers/codemirror.js"></script>
     <script src="./helpers/javascript.js"></script>
   </head>
@@ -25,7 +27,7 @@
   <body>
     <textarea id="input" autofocus="true"></textarea>
     <button id="run-button">RUN</button>
-    
+
     <select id="theme-selector">
       <option value="default">Theme</option>
       <option value="3024-night">3024-night</option>
@@ -42,6 +44,16 @@
       <option value="solarized">solarized</option>
       <option value="xq-light">xq-light</option>
     </select>
+
+    <section id="editor-container">
+      <textarea id="input" autofocus="true"></textarea>
+    </section>
+
+    <footer id="footer">
+      <button id="run-button">
+        RUN<span class="code-symbol">< /></span>
+      </button>
+    </footer>
 
     <script>require('./renderer.js')</script>
   </body>

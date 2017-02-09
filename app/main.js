@@ -53,31 +53,6 @@ const saveFile = exports.saveFile = (code) => {
   });
 }
 
-/* electron modules */
-// [ 'clipboard',
-//   'crashReporter',
-//   'nativeImage',
-//   'shell',
-//   'app',
-//   'autoUpdater',
-//   'BrowserWindow',
-//   'contentTracing',
-//   'dialog',
-//   'ipcMain',
-//   'globalShortcut',
-//   'Menu',
-//   'MenuItem',
-//   'powerMonitor',
-//   'powerSaveBlocker',
-//   'protocol',
-//   'screen',
-//   'session',
-//   'systemPreferences',
-//   'Tray',
-//   'webContents',
-//   'net' ]
-
-
 if (process.env.SPECTRON) {
   mock(dialog)
 }

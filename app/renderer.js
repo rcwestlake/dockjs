@@ -5,14 +5,24 @@ const $input = $('#input')
 const $runButton = $('#run-button')
 const $themeSelector = $('#theme-selector')
 let $chosenTheme = 'mbo'
-const $editor = $('.CodeMirror-scroll')
 
 const editor = CodeMirror.fromTextArea($input[0], {
   lineNumbers: true,
   lineWrapping: true,
   theme: $chosenTheme,
   mode: 'javascript',
-  autofocus: true
+  autofocus: true,
+  tabSize: 2,
+  matchBrackets: true,
+  styleActiveLine: true,
+  autoCloseBrackets: true,
+  styleSelectedText: true,
+
+  lineComment: true,
+  toggleComment: true,
+  blockComment: true,
+  continueComment: true,
+  lint: true,
 })
 
 $themeSelector.on('change', () => {

@@ -1,11 +1,14 @@
+const { remote } = require('electron')
+const { openFile } = remote.require('./main')
 const $ = require('jquery')
 const babel = require('babel-core')
 
 const $input = $('#input')
 const $runButton = $('#run-button')
 const $themeSelector = $('#theme-selector')
+const $uploadButton = $('#upload-button')
+
 let $chosenTheme = 'mbo'
-const $editor = $('.CodeMirror-scroll')
 
 const editor = CodeMirror.fromTextArea($input[0], {
   lineNumbers: true,
@@ -30,6 +33,15 @@ $runButton.on('click', () => {
   checkForMaliciousIntent(code)
   eval(code)
 })
+
+$uploadButton.on('click', () => {
+  setEditorValue(openFile())
+})
+
+const setEditorValue = (content) => {
+  if(!content) return
+  editor.setValue(content)
+}
 
 const checkForMaliciousIntent = (code) => {
   maliciousIntentKeys.map(key => {

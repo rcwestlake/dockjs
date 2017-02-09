@@ -1,5 +1,6 @@
-const { app, BrowserWindow } = require('electron')
+const { app, dialog } = require('electron')
 const menubar = require('menubar')
+const fs = require('fs')
 const mock = require('../tests/mocks')
 
 const mb = menubar({
@@ -15,6 +16,27 @@ mb.on('after-create-window', () => {
   mb.window.loadURL(`file://${__dirname}/index.html`)
   mb.window.webContents.openDevTools()
 })
+
+const openFile = exports.openFile = (file = getFile()) => {
+  if(!file) return
+  const content = fs.readFileSync(file).toString()
+  if(!content) return
+  return content
+}
+
+const getFile = exports.getFile = () => {
+  const files = dialog.showOpenDialog({
+    properties: ['openFile'],
+    filters: [
+      {name: 'Code', extensions: ['js']}
+    ]
+  })
+
+  if(!files) return
+
+  const file = files[0]
+  return file
+}
 
 /* electron modules */
 // [ 'clipboard',

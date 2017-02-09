@@ -16,27 +16,6 @@ mb.on('after-create-window', () => {
   mb.window.webContents.openDevTools()
 })
 
-// let mainWindow = null
-//
-// app.on('ready', () => {
-//   console.log('app is ready')
-//   mainWindow = new BrowserWindow({
-//     maxWidth: 800,
-//     maxHeight: 600,
-//     // webPreferences: { devTools: true }
-//   })
-//
-//   mainWindow.once('ready-to-show', () => {
-//     mainWindow.show()
-//   })
-//
-  // mainWindow.webContents.openDevTools()
-//
-//   mainWindow.loadURL(`file://${__dirname}/index.html`)
-// })
-
-// BrowserWindow.addDevToolsExtension(path)
-
 /* electron modules */
 // [ 'clipboard',
 //   'crashReporter',
@@ -62,6 +41,6 @@ mb.on('after-create-window', () => {
 //   'net' ]
 
 
-// if (process.env.SPECTRON) {
-//   mock(dialog)
-// }
+if (process.env.SPECTRON) {
+  mock(dialog)
+}

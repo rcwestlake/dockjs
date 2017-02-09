@@ -23,7 +23,7 @@ button {
   max-height: 10%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #run-button {
@@ -41,27 +41,26 @@ button {
   bottom: 11%;
 }
 
+#run-button:hover {
+  background-color: #FF5668;
+}
+
 .code-symbol {
   display: block;
   color: #fff;
 }
 
 select#theme-selector, button {
-  /*width: */
-  /*height: 10%;*/
-  font-size: 14px;
+  font-size: 11px;
   margin: 0px 5px;
 }
 
 .dropdown-container select, button {
-  padding: 5px;
+  border: none;
   border-radius: 5px;
   background-color: #4E4E4E;
+  padding: 5px;
   color: #fff;
-  /*background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;*/
-  /*background: transparent;*/
   height: 30px;
   overflow: hidden;
-  /*width: 240px;*/
-  border: none;
 }

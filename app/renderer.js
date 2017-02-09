@@ -1,5 +1,5 @@
 const { remote } = require('electron')
-const { openFile } = remote.require('./main')
+const { openFile, saveFile } = remote.require('./main')
 const $ = require('jquery')
 const babel = require('babel-core')
 
@@ -7,6 +7,7 @@ const $input = $('#input')
 const $runButton = $('#run-button')
 const $themeSelector = $('#theme-selector')
 const $uploadButton = $('#upload-button')
+const $saveButton = $('#save-button')
 
 let $chosenTheme = 'mbo'
 
@@ -42,6 +43,10 @@ const setEditorValue = (content) => {
   if(!content) return
   editor.setValue(content)
 }
+$saveButton.on('click', () => {
+  const code = editor.getValue()
+  saveFile(code)
+})
 
 const checkForMaliciousIntent = (code) => {
   maliciousIntentKeys.map(key => {

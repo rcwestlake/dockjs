@@ -24,8 +24,8 @@ const openFile = exports.openFile = (file = getFile()) => {
   return content
 }
 
-const getFile = exports.getFile = () => {
-  const files = dialog.showOpenDialog({
+const getFile = () => {
+  const files = dialog.showOpenDialog(mb, {
     properties: ['openFile'],
     filters: [
       {name: 'Code', extensions: ['js']}
@@ -36,6 +36,21 @@ const getFile = exports.getFile = () => {
 
   const file = files[0]
   return file
+}
+
+const saveFile = exports.saveFile = (code) => {
+  dialog.showSaveDialog({ filters: [
+     { name: 'code', extensions: ['js', 'json'] }
+   ]}, (file) => {
+    if (file === undefined) return
+
+    fs.writeFile(file, code, (err) => {
+      if(err !== null) {
+        console.error('Error in save process :', err);
+        dialog.showErrorBox('File Save Error: ', err)
+      }
+    });
+  });
 }
 
 /* electron modules */

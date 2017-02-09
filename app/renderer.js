@@ -3,12 +3,20 @@ const babel = require('babel-core')
 
 const $input = $('#input')
 const $runButton = $('#run-button')
+const $themeSelector = $('#theme-selector')
+let $chosenTheme = 'mbo'
+const $editor = $('.CodeMirror-scroll')
 
 const editor = CodeMirror.fromTextArea($input[0], {
-    lineNumbers: true,
-    lineWrapping: true,
-    theme: 'mbo',
-    mode: 'javascript'
+  lineNumbers: true,
+  lineWrapping: true,
+  theme: $chosenTheme,
+  mode: 'javascript'
+})
+
+$themeSelector.on('change', () => {
+  $chosenTheme = $('#theme-selector option:selected').val()
+  editor.setOption('theme', $chosenTheme)
 })
 
 $runButton.on('click', () => {

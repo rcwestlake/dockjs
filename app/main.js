@@ -8,15 +8,19 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     maxWidth: 800,
     maxHeight: 600,
+    // webPreferences: { devTools: true }
   })
 
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
   })
 
+  mainWindow.webContents.openDevTools()
+
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 })
 
+// BrowserWindow.addDevToolsExtension(path)
 
 /* electron modules */
 // [ 'clipboard',

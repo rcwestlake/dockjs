@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 button {
@@ -21,23 +21,33 @@ button {
   background: #65C6C4;
   height: 10%;
   max-height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #run-button {
   color: #fff;
   background-color: #FF5656;
   border: none;
-  border-radius: 100%;
+  border-radius: 10px;
+  font-size: 14px;
   font-weight: bold;
   width: 60px;
   height: 60px;
   outline: none;
   position: absolute;
-  right: 20px;
-  bottom: 10.5%
+  right: 1%;
+  bottom: 11%;
 }
 
 .code-symbol {
   display: block;
   color: #fff;
+}
+
+#theme-selector {
+  /*width: */
+  height: 10%;
+  font-size: 16px;
 }

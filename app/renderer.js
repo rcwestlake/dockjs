@@ -8,6 +8,8 @@ const $runButton = $('#run-button')
 const $themeSelector = $('#theme-selector')
 const $uploadButton = $('#upload-button')
 const $saveButton = $('#save-button')
+const $toES5Button = $('#transpile-to-es5')
+const $toES6Button = $('#transpile-to-es6')
 
 let $chosenTheme = 'mbo'
 
@@ -36,11 +38,7 @@ $themeSelector.on('change', () => {
 })
 
 $runButton.on('click', () => {
-  const editorCode = editor.getValue()
-  const result = babel.transform(editorCode, {
-    presets: ['es2015']
-  })
-  const code = result.code
+  const code = transpileToES5()
 
   checkForMaliciousIntent(code)
   eval(code)
@@ -58,6 +56,20 @@ $saveButton.on('click', () => {
   const code = editor.getValue()
   saveFile(code)
 })
+
+$toES5Button.on('click', () => {
+  const code = transpileToES5()
+  editor.setValue(code)
+})
+
+const transpileToES5 = () => {
+  const editorCode = editor.getValue()
+  const result = babel.transform(editorCode, {
+    presets: ['es2015']
+  })
+  const code = result.code
+  return code
+}
 
 const checkForMaliciousIntent = (code) => {
   maliciousIntentKeys.map(key => {

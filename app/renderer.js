@@ -33,33 +33,6 @@ const editor = CodeMirror.fromTextArea($input[0], {
   lint: true,
 })
 
-const $settingsContainer = $('.js-settings-container')
-const $showSettings = $('.js-show-settings')
-const $wrapper = $('.wrapper')
-const $hideSettings = $('#hide-settings')
-
-$showSettings.on('click', () => {
-  console.log('clicked');
-  $settingsContainer.addClass('settings-container--animatable')
-  $settingsContainer.addClass('settings-container--visible')
-  $wrapper.addClass('wrapper--visible')
-  $settingsContainer.on('transitionend', onTransitionEnd)
-})
-
-$hideSettings.on('click', () => {
-  console.log('hide is clicked');
-  $settingsContainer.addClass('settings-container--animatable')
-  $settingsContainer.removeClass('settings-container--visible')
-  $wrapper.removeClass('wrapper--visible')
-  $settingsContainer.on('transitionend', onTransitionEnd)
-})
-
-const onTransitionEnd = () => {
-  console.log('transition end is called');
-  $settingsContainer.removeClass('settings-container--animatable')
-  $settingsContainer.off('transitionend', onTransitionEnd)
-}
-
 $themeSelector.on('change', () => {
   $chosenTheme = $('#theme-selector option:selected').val()
   editor.setOption('theme', $chosenTheme)

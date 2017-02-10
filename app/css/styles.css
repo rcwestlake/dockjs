@@ -26,7 +26,7 @@ button {
   justify-content: flex-start;
 }
 
-.wrapper {
+.settings-wrapper {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -36,7 +36,7 @@ button {
   pointer-events: none;
 }
 
-.wrapper--visible {
+.settings-wrapper--visible {
   pointer-events: auto;
 }
 
@@ -44,9 +44,8 @@ button {
   position: relative;
   margin: auto;
   box-shadow: 2px 0 5px rgba(0,0,0,0.8);
-  background: #4ECDC4;
-  background: -webkit-linear-gradient(to left, #4ECDC4 , #556270);
-  background: linear-gradient(to left, #4ECDC4 , #556270);
+  background: #FF5656;
+  background-color: #FF5656;
   max-width: 350px;
   height: 100%;
   width: 70%;
@@ -65,6 +64,7 @@ button {
 }
 
 #hide-settings {
+  align-items: flex-end;
   display: block;
 }
 

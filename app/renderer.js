@@ -16,7 +16,18 @@ const editor = CodeMirror.fromTextArea($input[0], {
   lineWrapping: true,
   theme: $chosenTheme,
   mode: 'javascript',
-  autofocus: true
+  autofocus: true,
+  tabSize: 2,
+  matchBrackets: true,
+  styleActiveLine: true,
+  autoCloseBrackets: true,
+  styleSelectedText: true,
+
+  lineComment: true,
+  toggleComment: true,
+  blockComment: true,
+  continueComment: true,
+  lint: true,
 })
 
 $themeSelector.on('change', () => {

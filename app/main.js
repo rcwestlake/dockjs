@@ -8,7 +8,8 @@ const appTitle = 'DockJS'
 const mb = menubar({
   width: 800,
   height: 600,
-  index: `file://${__dirname}/index.html`
+  index: `file://${__dirname}/index.html`,
+  icon: './app/icons/blue-cup@2x.png'
 })
 
 mb.on('ready', function ready () {
@@ -75,6 +76,14 @@ const saveFile = exports.saveFile = (code) => {
     });
   });
 }
+
+mb.on('after-show', () => {
+  mb.tray.setImage('./app/icons/red-cup@2x.png')
+})
+
+mb.on('after-hide', () => {
+  mb.tray.setImage('./app/icons/blue-cup@2x.png')
+})
 
 if (process.env.SPECTRON) {
   mock(dialog)

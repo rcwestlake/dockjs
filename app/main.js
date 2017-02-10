@@ -4,7 +4,8 @@ const mock = require('../tests/mocks')
 
 const mb = menubar({
   width: 800,
-  height: 600
+  height: 600,
+  icon: './app/icons/blue-cup@2x.png'
 })
 
 mb.on('ready', function ready () {
@@ -16,30 +17,13 @@ mb.on('after-create-window', () => {
   mb.window.webContents.openDevTools()
 })
 
-/* electron modules */
-// [ 'clipboard',
-//   'crashReporter',
-//   'nativeImage',
-//   'shell',
-//   'app',
-//   'autoUpdater',
-//   'BrowserWindow',
-//   'contentTracing',
-//   'dialog',
-//   'ipcMain',
-//   'globalShortcut',
-//   'Menu',
-//   'MenuItem',
-//   'powerMonitor',
-//   'powerSaveBlocker',
-//   'protocol',
-//   'screen',
-//   'session',
-//   'systemPreferences',
-//   'Tray',
-//   'webContents',
-//   'net' ]
+mb.on('after-show', () => {
+  mb.tray.setImage('./app/icons/red-cup@2x.png')
+})
 
+mb.on('after-hide', () => {
+  mb.tray.setImage('./app/icons/blue-cup@2x.png')
+})
 
 if (process.env.SPECTRON) {
   mock(dialog)

@@ -2,6 +2,7 @@ const { remote } = require('electron')
 const { openFile, saveFile } = remote.require('./main')
 const $ = require('jquery')
 const babel = require('babel-core')
+const lebab = require('lebab')
 
 const $input = $('#input')
 const $runButton = $('#run-button')
@@ -61,6 +62,23 @@ $toES5Button.on('click', () => {
   const code = transpileToES5()
   editor.setValue(code)
 })
+
+$toES6Button.on('click', () => {
+  const editorCode = editor.getValue()
+  const code = transpileToES6(editorCode)[0]
+  const warnings = transpileToES6(editorCode)[1]
+
+  if(warnings.length) {
+    console.error('Warning: please be aware of these transpile errors: ', warnings)
+  }
+  editor.setValue(code)
+})
+
+const transpileToES6 = (editorCode) => {
+  const { code, warnings } = lebab.transform(editorCode, ['let', 'arrow', 'class', 'commonjs', 'default-param'])
+
+  return [code, warnings]
+}
 
 const transpileToES5 = () => {
   const editorCode = editor.getValue()

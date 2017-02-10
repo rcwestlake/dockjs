@@ -3,9 +3,12 @@ const menubar = require('menubar')
 const fs = require('fs')
 const mock = require('../tests/mocks')
 
+const appTitle = 'DockJS'
+
 const mb = menubar({
   width: 800,
-  height: 600
+  height: 600,
+  index: `file://${__dirname}/index.html`
 })
 
 mb.on('ready', function ready () {
@@ -13,8 +16,25 @@ mb.on('ready', function ready () {
 })
 
 mb.on('after-create-window', () => {
-  mb.window.loadURL(`file://${__dirname}/index.html`)
   mb.window.webContents.openDevTools()
+})
+
+mb.on('close', () => {
+  if(mb.isDocumentEdited()) {
+    const result = dialog.showMessageBox(mb, {
+        type: 'warning',
+        title: 'Quit with Unsaved Changes?',
+        message: 'You have unsaved changes. Are you sure you want to quit?',
+        buttons: [
+          'Quit Anyway',
+          'Cancel'
+        ],
+        defaultId: 0,
+        cancelId: 1
+      })
+
+    if(result === 0) mb.destroy()
+  }
 })
 
 const openFile = exports.openFile = (file = getFile()) => {
@@ -26,6 +46,7 @@ const openFile = exports.openFile = (file = getFile()) => {
 
 const getFile = () => {
   const files = dialog.showOpenDialog(mb, {
+    title: 'Open File - ' + appTitle,
     properties: ['openFile'],
     filters: [
       {name: 'Code', extensions: ['js']}
@@ -39,8 +60,10 @@ const getFile = () => {
 }
 
 const saveFile = exports.saveFile = (code) => {
-  dialog.showSaveDialog({ filters: [
-     { name: 'code', extensions: ['js', 'json'] }
+  dialog.showSaveDialog({
+    title: 'Save Code - ' + appTitle,
+    filters: [
+      { name: 'code', extensions: ['js', 'json'] }
    ]}, (file) => {
     if (file === undefined) return
 

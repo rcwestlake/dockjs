@@ -28,6 +28,33 @@
       <textarea id="input" autofocus="true"></textarea>
     </section>
 
+    <div class="wrapper">
+      <aside class="settings-container js-settings-container">
+        <button id="hide-settings">X</button>
+        <button id="quit-button">
+          Quit DockJS
+        </button>
+        <div class="dropdown-container">
+          <select id="theme-selector">
+            <option value="default">Theme</option>
+            <option value="3024-night">3024-night</option>
+            <option value="abcdef">abcdef</option>
+            <option value="blackboard">blackboard</option>
+            <option value="colorforth">colorforth</option>
+            <option value="dracula">dracula</option>
+            <option value="eclipse">eclipse</option>
+            <option value="mbo">mbo</option>
+            <option value="mdn-like">mdn-like</option>
+            <option value="monokai">monokai</option>
+            <option value="neat">neat</option>
+            <option value="seti">seti</option>
+            <option value="solarized">solarized</option>
+            <option value="xq-light">xq-light</option>
+          </select>
+        </div>
+      </aside>
+    </div>
+
     <footer id="footer">
       <button id="run-button">
         RUN
@@ -37,25 +64,7 @@
       <button id="transpile-to-es6">ES5 ➟ ES6</button>
       <button id="upload-button">UPLOAD CODE</button>
       <button id="save-button">SAVE CODE</button>
-
-      <div class="dropdown-container">
-        <select id="theme-selector">
-          <option value="default">Theme</option>
-          <option value="3024-night">3024-night</option>
-          <option value="abcdef">abcdef</option>
-          <option value="blackboard">blackboard</option>
-          <option value="colorforth">colorforth</option>
-          <option value="dracula">dracula</option>
-          <option value="eclipse">eclipse</option>
-          <option value="mbo">mbo</option>
-          <option value="mdn-like">mdn-like</option>
-          <option value="monokai">monokai</option>
-          <option value="neat">neat</option>
-          <option value="seti">seti</option>
-          <option value="solarized">solarized</option>
-          <option value="xq-light">xq-light</option>
-        </select>
-      </div>
+      <button id="show-settings-button" class="js-show-settings">SETTINGS</button>
     </footer>
 
     <script>require('./renderer.js')</script>

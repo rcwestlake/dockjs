@@ -23,7 +23,53 @@ button {
   max-height: 10%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.wrapper--visible {
+  pointer-events: auto;
+}
+
+.settings-container {
+  position: relative;
+  margin: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.8);
+  background: #4ECDC4;
+  background: -webkit-linear-gradient(to left, #4ECDC4 , #556270);
+  background: linear-gradient(to left, #4ECDC4 , #556270);
+  max-width: 350px;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(202%);
+  z-index: 101;
+}
+
+.settings-container--animatable {
+  transition: transform 0.3s cubic-bezier(0,0,0.3,1);
+}
+
+.settings-container--visible {
+  transform: none;
+}
+
+#hide-settings {
+  display: block;
+}
+
+#quit-button {
+  width: 100px;
 }
 
 #run-button {

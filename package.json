@@ -33,7 +33,9 @@
     "spectron": "^3.6.0"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
     "jquery": "^3.1.1",
+    "lebab": "^2.7.1",
     "menubar": "^5.2.3"
   }
 }

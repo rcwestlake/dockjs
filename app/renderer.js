@@ -1,5 +1,5 @@
 const { remote } = require('electron')
-const { openFile, saveFile } = remote.require('./main')
+const { openFile, saveFile, quitApp } = remote.require('./main')
 const $ = require('jquery')
 const babel = require('babel-core')
 const lebab = require('lebab')
@@ -11,6 +11,7 @@ const $uploadButton = $('#upload-button')
 const $saveButton = $('#save-button')
 const $toES5Button = $('#transpile-to-es5')
 const $toES6Button = $('#transpile-to-es6')
+const $quitButton = $('#quit-button')
 
 let $chosenTheme = 'mbo'
 
@@ -31,6 +32,10 @@ const editor = CodeMirror.fromTextArea($input[0], {
   blockComment: true,
   continueComment: true,
   lint: true,
+})
+
+$quitButton.on('click', () => {
+  quitApp()
 })
 
 $themeSelector.on('change', () => {

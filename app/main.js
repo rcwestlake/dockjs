@@ -38,6 +38,10 @@ mb.on('close', () => {
   }
 })
 
+const quitApp = exports.quitApp = () => {
+  app.quit()
+}
+
 const openFile = exports.openFile = (file = getFile()) => {
   if(!file) return
   const content = fs.readFileSync(file).toString()

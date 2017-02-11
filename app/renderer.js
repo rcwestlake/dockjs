@@ -15,14 +15,6 @@ const $quitButton = $('#quit-button')
 
 let $chosenTheme = 'mbo'
 
-var print = console.log.bind( console )
-var log = console.log.bind( console )
-var run = console.log.bind( console )
-var l = console.log.bind( console )
-var ooo = console.log.bind( console )
-
-// var L = console.log.bind( console )
-// var 🥐 = console.log.bind( console )
 
 const editor = CodeMirror.fromTextArea($input[0], {
   lineNumbers: true,
@@ -112,3 +104,11 @@ const checkForMaliciousIntent = (code) => {
 }
 
 const maliciousIntentKeys = ['<script>', '</script>']
+
+const print = console.log.bind( console )
+const log = console.log.bind( console )
+const run = console.log.bind( console )
+const l = console.log.bind( console )
+const pour = console.log.bind( console )
+const serve = console.log.bind( console )
+const brew = console.log.bind( console )

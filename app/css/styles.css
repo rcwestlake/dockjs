@@ -29,7 +29,7 @@ button {
   justify-content: center;
 }
 
-.settings-wrapper {
+.info-wrapper {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -39,16 +39,16 @@ button {
   pointer-events: none;
 }
 
-.settings-wrapper--visible {
+.info-wrapper--visible {
   pointer-events: auto;
 }
 
-.settings-container {
+.info-container {
   position: relative;
   margin: auto;
   box-shadow: 2px 0 5px rgba(0,0,0,0.8);
-  background: #FF5656;
-  background-color: #FF5656;
+  background: #29C6CD;
+  background-color: #29C6CD;
   max-width: 350px;
   height: 100%;
   width: 70%;
@@ -58,11 +58,11 @@ button {
   z-index: 101;
 }
 
-.settings-container--animatable {
+.info-container--animatable {
   transition: transform 0.3s cubic-bezier(0,0,0.3,1);
 }
 
-.settings-container--visible {
+.info-container--visible {
   transform: none;
 }
 
@@ -103,10 +103,9 @@ select#theme-selector {
 .dropdown-container select {
   border: none;
   border-radius: 5px;
-  background-color: #65C6C4;
   padding: 5px;
   color: #fff;
   height: 30px;
-  width: 150px;
+  width: 70px;
   overflow: hidden;
 }

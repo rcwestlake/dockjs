@@ -1,25 +1,25 @@
 const $ = require('jquery')
 
-const $settingsContainer = $('.js-settings-container')
-const $showSettings = $('.js-show-settings')
-const $settingsWrapper = $('.js-settings-wrapper')
-const $hideSettings = $('#hide-settings')
+const $infoContainer = $('.js-info-container')
+const $showInfo = $('.js-show-info')
+const $infoWrapper = $('.js-info-wrapper')
+const $hideInfo = $('#hide-info')
 
-$showSettings.on('click', () => {
-  $settingsContainer.addClass('settings-container--animatable')
-  $settingsContainer.addClass('settings-container--visible')
-  $settingsWrapper.addClass('settings-wrapper--visible')
-  $settingsContainer.on('transitionend', onTransitionEnd)
+$showInfo.on('click', () => {
+  $infoContainer.addClass('info-container--animatable')
+  $infoContainer.addClass('info-container--visible')
+  $infoWrapper.addClass('info-wrapper--visible')
+  $infoContainer.on('transitionend', onTransitionEnd)
 })
 
-$hideSettings.on('click', () => {
-  $settingsContainer.addClass('settings-container--animatable')
-  $settingsContainer.removeClass('settings-container--visible')
-  $settingsWrapper.removeClass('settings-wrapper--visible')
-  $settingsContainer.on('transitionend', onTransitionEnd)
+$hideInfo.on('click', () => {
+  $infoContainer.addClass('info-container--animatable')
+  $infoContainer.removeClass('info-container--visible')
+  $infoWrapper.removeClass('info-wrapper--visible')
+  $infoContainer.on('transitionend', onTransitionEnd)
 })
 
 const onTransitionEnd = () => {
-  $settingsContainer.removeClass('settings-container--animatable')
-  $settingsContainer.off('transitionend', onTransitionEnd)
+  $infoContainer.removeClass('info-container--animatable')
+  $infoContainer.off('transitionend', onTransitionEnd)
 }

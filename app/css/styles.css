@@ -5,6 +5,9 @@ html, body {
 
 button {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
 }
 
 #editor-container {
@@ -23,25 +26,61 @@ button {
   max-height: 10%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.info-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.info-wrapper--visible {
+  pointer-events: auto;
+}
+
+.info-container {
+  position: relative;
+  margin: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.8);
+  background: #29C6CD;
+  background-color: #29C6CD;
+  max-width: 350px;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(202%);
+  z-index: 101;
+}
+
+.info-container--animatable {
+  transition: transform 0.3s cubic-bezier(0,0,0.3,1);
+}
+
+.info-container--visible {
+  transform: none;
+}
+
+#hide-settings {
+  align-items: flex-end;
+  display: block;
 }
 
 #run-button {
   background: url('../icons/run-cup@2x.png') no-repeat;
   background-size: 60px 60px;
-
+  border: none;
   width: 60px;
   height: 60px;
   position: absolute;
   right: 3%;
   bottom: 11%;
-  /*color: #fff;
-  background-color: #FF5656;
-  border: none;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  outline: none;*/
+  outline: none;
 }
 
 #run-button:hover {
@@ -49,26 +88,21 @@ button {
   background-size: 60px 60px;
 }
 
-/*#run-button:hover {
-  background-color: #FF5668;
-}*/
-
 .code-symbol {
   display: block;
   color: #fff;
 }
 
-select#theme-selector, button {
+select#theme-selector {
   font-size: 11px;
   margin: 0px 5px;
 }
 
-.dropdown-container select, button {
+.dropdown-container select {
   border: none;
   border-radius: 5px;
-  background-color: #4E4E4E;
   padding: 5px;
-  color: #fff;
   height: 30px;
+  width: 70px;
   overflow: hidden;
 }

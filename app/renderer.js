@@ -1,5 +1,5 @@
 const { remote } = require('electron')
-const { openFile, saveFile } = remote.require('./main')
+const { openFile, saveFile, quitApp } = remote.require('./main')
 const $ = require('jquery')
 const babel = require('babel-core')
 const lebab = require('lebab')
@@ -11,8 +11,10 @@ const $uploadButton = $('#upload-button')
 const $saveButton = $('#save-button')
 const $toES5Button = $('#transpile-to-es5')
 const $toES6Button = $('#transpile-to-es6')
+const $quitButton = $('#quit-button')
 
 let $chosenTheme = 'mbo'
+
 
 const editor = CodeMirror.fromTextArea($input[0], {
   lineNumbers: true,
@@ -31,6 +33,10 @@ const editor = CodeMirror.fromTextArea($input[0], {
   blockComment: true,
   continueComment: true,
   lint: true,
+})
+
+$quitButton.on('click', () => {
+  quitApp()
 })
 
 $themeSelector.on('change', () => {
@@ -98,3 +104,11 @@ const checkForMaliciousIntent = (code) => {
 }
 
 const maliciousIntentKeys = ['<script>', '</script>']
+
+const print = console.log.bind( console )
+const log = console.log.bind( console )
+const run = console.log.bind( console )
+const l = console.log.bind( console )
+const pour = console.log.bind( console )
+const serve = console.log.bind( console )
+const brew = console.log.bind( console )

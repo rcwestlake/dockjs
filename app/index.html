@@ -31,10 +31,24 @@
     <div class="settings-wrapper js-settings-wrapper">
       <aside class="settings-container js-settings-container">
         <button id="hide-settings">X</button>
-        <button id="quit-button">
-          Quit DockJS
-        </button>
-        <div class="dropdown-container">
+        <button id="show-settings-button" class="js-show-settings">SETTINGS</button>
+      </aside>
+    </div>
+
+    <footer id="footer">
+      <button id="run-button">
+        RUN
+        <span class="code-symbol">< /></span>
+      </button>
+      <button id="transpile-to-es5">ES6 ➟ ES5</button>
+      <button id="transpile-to-es6">ES5 ➟ ES6</button>
+      </div>
+      <button id="upload-button">UPLOAD CODE</button>
+      <button id="save-button">SAVE CODE</button>
+      <button id="quit-button">
+        Quit DockJS
+      </button>
+        <!-- <div class="dropdown-container">
           <select id="theme-selector">
             <option value="default">Theme</option>
             <option value="3024-night">3024-night</option>
@@ -51,20 +65,9 @@
             <option value="solarized">solarized</option>
             <option value="xq-light">xq-light</option>
           </select>
-        </div>
-      </aside>
-    </div>
+        </div> -->
+      </div>
 
-    <footer id="footer">
-      <button id="run-button">
-        RUN
-        <span class="code-symbol">< /></span>
-      </button>
-      <button id="transpile-to-es5">ES6 ➟ ES5</button>
-      <button id="transpile-to-es6">ES5 ➟ ES6</button>
-      <button id="upload-button">UPLOAD CODE</button>
-      <button id="save-button">SAVE CODE</button>
-      <button id="show-settings-button" class="js-show-settings">SETTINGS</button>
     </footer>
 
     <script>require('./renderer.js')</script>

@@ -72,22 +72,19 @@ button {
 }
 
 #run-button {
-  color: #fff;
-  background-color: #FF5656;
-  border: none;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  background: url('../icons/run-cup@2x.png') no-repeat;
+  background-size: 60px 60px;
+
   width: 60px;
   height: 60px;
-  outline: none;
   position: absolute;
-  right: 1%;
+  right: 3%;
   bottom: 11%;
 }
 
 #run-button:hover {
-  background-color: #FF5668;
+  background: url('../icons/run-cup-hover@2x.png') no-repeat;
+  background-size: 60px 60px;
 }
 
 .code-symbol {

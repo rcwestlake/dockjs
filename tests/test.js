@@ -6,7 +6,7 @@ const assert = require('chai').assert
 const path = require('path')
 
 const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron')
-const appPath = path.join(__dirname, '..')
+const appPath = path.join(__dirname, '..', 'app', 'main.js')
 
 global.before(function () {
     chai.should()

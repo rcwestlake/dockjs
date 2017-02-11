@@ -74,12 +74,13 @@ button {
 #run-button {
   background: url('../icons/run-cup@2x.png') no-repeat;
   background-size: 60px 60px;
-
+  border: none;
   width: 60px;
   height: 60px;
   position: absolute;
   right: 3%;
   bottom: 11%;
+  outline: none;
 }
 
 #run-button:hover {
@@ -101,7 +102,6 @@ select#theme-selector {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  color: #fff;
   height: 30px;
   width: 70px;
   overflow: hidden;

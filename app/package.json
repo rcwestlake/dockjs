@@ -1,0 +1,7 @@
+{
+    "name": "DockJS",
+    "description": "Write code from the menubar of your desktop",
+    "version": "1.0.0",
+    "author": "Ryan Westlake <ryancwestlake@gmail.com> & Kinan Whyte <kinanwhyte@gmail.com>",
+    "main": "main.js"
+}

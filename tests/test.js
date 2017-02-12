@@ -13,6 +13,8 @@ global.before(function () {
     chai.use(chaiAsPromised)
 })
 
+/* Research testing for menubar app - WIP */
+
 describe('App starts with correct title, buttons', function () {
   let app
 

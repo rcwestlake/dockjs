@@ -13,9 +13,9 @@ In this project, we designed an interpretation of a traditional desktop applicat
 
 ---
 
-<img width="1280" alt="screen shot 2017-02-12 at 10 14 15 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871720/c9dac67c-f170-11e6-8efb-a83a0620580f.png">
-
 <img width="1280" alt="screen shot 2017-02-12 at 10 11 49 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871721/c9ea3260-f170-11e6-85bf-9eb8a5c7c633.png">
+
+<img width="1280" alt="screen shot 2017-02-12 at 10 14 15 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871720/c9dac67c-f170-11e6-8efb-a83a0620580f.png">
 
 ---
 

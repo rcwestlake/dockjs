@@ -3,13 +3,6 @@ html, body {
   height: 100vh;
 }
 
-button {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
-}
-
 #editor-container {
   display: flex;
   flex-direction: column;
@@ -46,9 +39,9 @@ button {
 .info-container {
   position: relative;
   margin: auto;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.8);
-  background: #29C6CD;
-  background-color: #29C6CD;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.7);
+  color: #fff;
+  background-color: #444444;
   max-width: 350px;
   height: 100%;
   width: 70%;
@@ -56,6 +49,12 @@ button {
   flex-direction: column;
   transform: translateY(202%);
   z-index: 101;
+}
+
+.info-text {
+  margin: 5px 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 .info-container--animatable {
@@ -71,21 +70,108 @@ button {
   display: block;
 }
 
+button {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+}
+
+#hide-info-button {
+  background: url('../icons/back-arrow@2x.png') no-repeat;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  margin: 20px 0 0 20px;
+}
+
+#hide-info-button {
+  background: url('../icons/back-hover@2x.png') no-repeat;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+}
+
 #run-button {
   background: url('../icons/run-cup@2x.png') no-repeat;
   background-size: 60px 60px;
-  border: none;
   width: 60px;
   height: 60px;
   position: absolute;
   right: 3%;
-  bottom: 11%;
-  outline: none;
+  bottom: 13%;
 }
 
 #run-button:hover {
   background: url('../icons/run-cup-hover@2x.png') no-repeat;
   background-size: 60px 60px;
+}
+
+#transpile-to-es5 {
+  background: url('../icons/ice-cream-11@2x.png') no-repeat;
+  background-size: 35px 35px;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+#transpile-to-es5:hover {
+  background: url('../icons/ice-cream-11-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#transpile-to-es6 {
+  background: url('../icons/ES6@2x.png') no-repeat;
+  background-size: 35px 35px;
+  border-radius: 10px;
+}
+
+#transpile-to-es6:hover {
+  background: url('../icons/ES6-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
+  border-radius: 10px;
+}
+
+#upload-button {
+  background: url('../icons/open@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#upload-button:hover {
+  background: url('../icons/open-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#save-button {
+  background: url('../icons/save-disk@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#save-button:hover {
+  background: url('../icons/save-disk-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#info-button {
+  background: url('../icons/information@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#info-button:hover {
+  background: url('../icons/information-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#quit-button {
+  background: url('../icons/exit@2x.png') no-repeat;
+  background-size: 35px 35px;
+}
+
+#quit-button:hover {
+  background: url('../icons/exit-hover@2x.png') no-repeat;
+  background-size: 35px 35px;
 }
 
 .code-symbol {
@@ -94,8 +180,10 @@ button {
 }
 
 select#theme-selector {
-  font-size: 11px;
+  font-size: 12px;
   margin: 0px 5px;
+  background-color: #444444;
+  color: #ffffff;
 }
 
 .dropdown-container select {

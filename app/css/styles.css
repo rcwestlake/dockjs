@@ -84,10 +84,10 @@ button {
   background-size: 25px 25px;
   width: 25px;
   height: 25px;
-  margin: 20px 0 0 20px;
+  margin: 20px;
 }
 
-#hide-info-button {
+#hide-info-button:hover {
   background: url('../icons/back-hover@2x.png') no-repeat;
   background-size: 25px 25px;
   width: 25px;

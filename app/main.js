@@ -52,9 +52,9 @@ const openFile = exports.openFile = (file = getFile()) => {
 const getFile = () => {
   const files = dialog.showOpenDialog(mb, {
     title: 'Open File - ' + appTitle,
-    properties: ['openFile'],
+    // properties: ['openFile'],
     filters: [
-      {name: 'Code', extensions: ['js']}
+      { name: 'Code', extensions: ['js', 'json'] }
     ]
   })
 

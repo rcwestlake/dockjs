@@ -4,6 +4,8 @@ const chaiAsPromised = require('chai-as-promised')
 const expect = require('chai').expect
 const assert = require('chai').assert
 const path = require('path')
+//pull menubar in
+//const menuBarWindow = menubar.window
 
 const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron')
 const appPath = path.join(__dirname, '..', 'app', 'main.js')

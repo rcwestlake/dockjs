@@ -7,14 +7,14 @@
     "start": "electron .",
     "test": "mocha tests/test.js",
     "pack": "build --dir",
-    "dist": "CSC_IDENTITY_AUTO_DISCOVERY=true && build"
+    "dist": "CSC_IDENTITY_AUTO_DISCOVERY=true && DEBUG=electron-builder && build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rcwestlake/dockjs.git"
   },
   "author": "Ryan Westlake & Kinan Whyte",
-  "license": "LicenseRef-LICENSE",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/rcwestlake/dockjs/issues"
   },

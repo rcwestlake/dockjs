@@ -9,7 +9,7 @@
 
 We are both motivated to learn more and more Javascript each day, to refine our craft, and hone our innovative capacity by advancing through a deeper understanding of our JavaScript's core fundamentals. [ScratchJS](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn?hl=en-US) has always been a great go-to since its release, but we wanted to access a REPL offline from our desktop, and add a few features that take practicing, writing, and learning JavaScript to another level.
 
-In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms.
+In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms. Since the recent additions to the JavaScript library in ES6/ES7, we wanted to have a feature that allowed a user to upload code in vanilla JS that could be transpiled into ES6, and allow a user to write/upload ES6 and have it b transpiled into Vanilla JS--the learning opportunities in seeing complex JS files or simple lines of code be translated can be powerful. We also offer the user the ability to save their code to a file or upload a file with a '.js' extension.
 
 ---
 

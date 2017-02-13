@@ -13,8 +13,8 @@ revreoh-html, body {
 
 #footer {
   color: #fff;
-  background-color: #b0f2f0;
-  background: #b0f2f0;
+  background-color: #000#181818;
+  background: #181818;
   height: 10%;
   max-height: 10%;
   display: flex;
@@ -120,7 +120,7 @@ button {
 }
 
 #transpile-to-es5:hover {
-  background: url('../icons/ice-cream-11@2x.png') no-repeat;
+  background: url('../icons/ice-cream-11-hover@2x.png') no-repeat;
   background-size: 35px 35px;
 }
 

@@ -6,7 +6,7 @@ const mock = require('../tests/mocks')
 const appTitle = 'DockJS'
 
 const mb = menubar({
-  width: 800,
+  width: 950,
   height: 600,
   index: `file://${__dirname}/index.html`,
   icon: './app/icons/blue-cup@2x.png'
@@ -23,16 +23,16 @@ mb.on('after-create-window', () => {
 mb.on('close', () => {
   if(mb.isDocumentEdited()) {
     const result = dialog.showMessageBox(mb, {
-        type: 'warning',
-        title: 'Quit with Unsaved Changes?',
-        message: 'You have unsaved changes. Are you sure you want to quit?',
-        buttons: [
-          'Quit Anyway',
-          'Cancel'
-        ],
-        defaultId: 0,
-        cancelId: 1
-      })
+      type: 'warning',
+      title: 'Quit with Unsaved Changes?',
+      message: 'You have unsaved changes. Are you sure you want to quit?',
+      buttons: [
+        'Quit Anyway',
+        'Cancel'
+      ],
+      defaultId: 0,
+      cancelId: 1
+    })
 
     if(result === 0) mb.destroy()
   }

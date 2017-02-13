@@ -7,7 +7,7 @@
 
 ...And so we continue writing in Javascript...because...
 
-We are both motivated to learn more and more Javascript each day, to refine our craft, and hone our innovative capacity through the power of greater advancements in the knowledge of our core language's fundamentals. ScratchJS has always been a great go-to since its release, but we wanted to access a REPL offline from our desktop.
+We are both motivated to learn more and more Javascript each day, to refine our craft, and hone our innovative capacity by advancing through a deeper understanding of our JavaScript's core fundamentals. [ScratchJS](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn?hl=en-US) has always been a great go-to since its release, but we wanted to access a REPL offline from our desktop, and add a few features that take practicing, writing, and learning JavaScript to another level.
 
 In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms.
 

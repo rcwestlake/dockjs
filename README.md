@@ -19,12 +19,12 @@ In this project, we designed an interpretation of a traditional desktop applicat
 
 Since this project was terra incognita, a big part of the learning was to document our travels. To do that we each addressed different sides of the project:
 
-1. Learning Electron from a higher mental model/view, what it is, and how we got started.
+Learning Electron from a higher mental model/view, what it is, and how we got started.
 
 * [Kinan's Post--A High Level View of Electron](https://medium.com/@iamkinansw/an-intro-to-electron-97fad3973951#.t4k77u4ew)
 * [Ryan's Post--Hello, Electron](https://medium.com/@rcwestlake/hello-electron-394451da0844#.q7t5o91rn)
 
-2. Particular technical problems that we encountered and how we solved it. Also, what we would improve if we started again.
+Particular technical problems that we encountered and how we solved it. Also, what we would improve if we started again.
 
 * [Kinan's Post--[coming soon]](https://medium.com/xyz)
 * [Ryan's Post--Building a desktop application with Electron + CodeMirror](https://medium.com/@rcwestlake/building-a-desktop-app-with-electron-codemirror-93b681237e60#.e87qpoq77z)

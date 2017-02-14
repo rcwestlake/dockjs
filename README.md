@@ -5,11 +5,9 @@
 — Atwood’s Law
 ```
 
-...And so we continue writing in Javascript...because...
+Ryan & Kinan here (creators of DockJS) - We are both motivated to learn more and more Javascript each day, to refine our craft, and garner a deeper understanding of JavaScript's core fundamentals. [ScratchJS](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn?hl=en-US) has always been a great go-to since its release, but we wanted to access a REPL offline from our desktop, and add a few features that take practicing, writing, and learning JavaScript to another level.
 
-We are both motivated to learn more and more Javascript each day, to refine our craft, and hone our innovative capacity by advancing through a deeper understanding of our JavaScript's core fundamentals. [ScratchJS](https://chrome.google.com/webstore/detail/scratch-js/alploljligeomonipppgaahpkenfnfkn?hl=en-US) has always been a great go-to since its release, but we wanted to access a REPL offline from our desktop, and add a few features that take practicing, writing, and learning JavaScript to another level.
-
-In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms. Since the recent additions to the JavaScript library in ES6/ES7, we wanted to have a feature that allowed a user to upload code in vanilla JS that could be transpiled into ES6, and allow a user to write/upload ES6 and have it b transpiled into Vanilla JS--the learning opportunities in seeing complex JS files or simple lines of code be translated can be powerful. We also offer the user the ability to save their code to a file or upload a file with a '.js' extension.
+In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms. Since the recent additions to the JavaScript library in ES6/ES7, we wanted to have a feature that allowed a user to upload code in vanilla JS that could be transpiled into ES6 and vice versa. 
 
 ---
 
@@ -19,18 +17,17 @@ In this project, we designed an interpretation of a traditional desktop applicat
 
 ---
 
-Since this project was terra incognita, a big part of the learning was to document our travels. To do that we each addressed three main sides to the project:
+Since this project was terra incognita, a big part of the learning was to document our travels. To do that we each addressed different sides of the project:
 
-1. Learning Electron from a higher mental model/view with our chosen library, VueJS. In these posts, we discuss how they work (both individually as well as how they work together), why we chose VueJS, and why we chose them over other alternatives.
+1. Learning Electron from a higher mental model/view, what it is, and how we got started.
 
-[Kinan's Post--A High Level View of Electron](https://medium.com/@iamkinansw/an-intro-to-electron-97fad3973951#.t4k77u4ew)
-[Ryan's Post--xyz](https://medium.com/xyz)
+* [Kinan's Post--A High Level View of Electron](https://medium.com/@iamkinansw/an-intro-to-electron-97fad3973951#.t4k77u4ew)
+* [Ryan's Post--Hello, Electron](https://medium.com/@rcwestlake/hello-electron-394451da0844#.q7t5o91rn)
 
-2. Particular technical problems that we encountered and how we solved it.
-3. A post-mortem on what went well and what you would improve upon if you were to continue working on this project or if you started over
+2. Particular technical problems that we encountered and how we solved it. Also, what we would improve if we started again.
 
-[Kinan's Post--xyz](https://medium.com/xyz)
-[Ryan's Post--xyz](https://medium.com/xyz)
+* [Kinan's Post--[coming soon]](https://medium.com/xyz)
+* [Ryan's Post--Building a desktop application with Electron + CodeMirror](https://medium.com/@rcwestlake/building-a-desktop-app-with-electron-codemirror-93b681237e60#.e87qpoq77z)
 
 ---
 

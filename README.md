@@ -26,7 +26,7 @@ Learning Electron from a higher mental model/view, what it is, and how we got st
 
 Particular technical problems that we encountered and how we solved it. Also, what we would improve if we started again.
 
-* [Kinan's Post--[coming soon]](https://medium.com/xyz)
+* [Kinan's Post--Postmortem of an Electron App](https://medium.com/@iamkinansw/postmortem-of-an-electron-app-67c4493aa50d#.3ax8clc5x)
 * [Ryan's Post--Building a desktop application with Electron + CodeMirror](https://medium.com/@rcwestlake/building-a-desktop-app-with-electron-codemirror-93b681237e60#.e87qpoq77z)
 
 ---

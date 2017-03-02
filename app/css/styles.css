@@ -1,4 +1,4 @@
-html, body {
+revreoh-html, body {
   margin: 0;
   height: 100vh;
 }
@@ -13,8 +13,8 @@ html, body {
 
 #footer {
   color: #fff;
-  background-color: #65C6C4;
-  background: #65C6C4;
+  background-color: #000#181818;
+  background: #181818;
   height: 10%;
   max-height: 10%;
   display: flex;
@@ -96,25 +96,27 @@ button {
 
 #run-button {
   background: url('../icons/run-cup@2x.png') no-repeat;
-  background-size: 60px 60px;
-  width: 60px;
-  height: 60px;
+  background-size: 44px 44px;
+  width: 44px;
+  height: 44px;
   position: absolute;
   right: 3%;
-  bottom: 13%;
+  bottom: 1.5%;
 }
 
 #run-button:hover {
   background: url('../icons/run-cup-hover@2x.png') no-repeat;
-  background-size: 60px 60px;
+  background-size: 44px 44px;
 }
 
 #transpile-to-es5 {
-  background: url('../icons/ice-cream-11@2x.png') no-repeat;
+  background: url('../icons/ice-cream-11-hover@2x.png') no-repeat;
   background-size: 35px 35px;
   border-radius: 10px;
   width: 35px;
   height: 35px;
+  position: absolute;
+  left: 3%;
 }
 
 #transpile-to-es5:hover {
@@ -126,6 +128,8 @@ button {
   background: url('../icons/ES6@2x.png') no-repeat;
   background-size: 35px 35px;
   border-radius: 10px;
+  position: absolute;
+  left: 10%;
 }
 
 #transpile-to-es6:hover {

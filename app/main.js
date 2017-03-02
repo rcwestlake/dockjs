@@ -54,7 +54,7 @@ const getFile = () => {
     title: 'Open File - ' + appTitle,
     properties: ['openFile'],
     filters: [
-      {name: 'Code', extensions: ['js']}
+      { name: 'Code', extensions: ['js', 'json'] }
     ]
   })
 

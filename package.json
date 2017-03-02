@@ -1,18 +1,20 @@
 {
-  "name": "dockjs",
+  "name": "DockJS",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desktop REPL app built with Electron",
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "mocha tests/test.js"
+    "test": "mocha tests/test.js",
+    "pack": "build --dir",
+    "dist": "CSC_IDENTITY_AUTO_DISCOVERY=true && build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rcwestlake/dockjs.git"
   },
   "author": "Ryan Westlake & Kinan Whyte",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/rcwestlake/dockjs/issues"
   },
@@ -26,6 +28,7 @@
     "chai-jquery": "^2.0.0",
     "devtron": "^1.4.0",
     "electron": "^1.4.15",
+    "electron-builder": "^13.5.0",
     "electron-packager": "^8.5.1",
     "electron-prebuilt": "^1.4.13",
     "eslint": "^3.15.0",
@@ -38,5 +41,11 @@
     "lebab": "^2.7.1",
     "menubar": "^5.2.3",
     "rename-function-calls": "^0.1.1"
+  },
+  "build": {
+    "appId": "rwkw.dockjs",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
   }
 }

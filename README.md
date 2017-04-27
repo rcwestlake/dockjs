@@ -1,4 +1,4 @@
-#DockJS
+# DockJS
 
 ```
 "Any application that can be written in JavaScript will eventually be written in JavaScript"
@@ -31,7 +31,7 @@ Particular technical problems that we encountered and how we solved it. Also, wh
 
 ---
 
-###Getting Started | Using DockJS
+### Getting Started | Using DockJS
 
 DockJS is in its final stages of post-production and is on its way to the App Store & Google Play. We also plan to host a website that will allow this fine tool to be downloaded easily as an open source project. We will look forward to any contributions/PRs that new users want to submit and welcome feedback.
 

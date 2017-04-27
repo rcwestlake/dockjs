@@ -31,4 +31,20 @@ Particular technical problems that we encountered and how we solved it. Also, wh
 
 ---
 
+###Getting Started
+
+DockJS is in its final stages of post-production and is on its way to the App Store & Google Play. We also plan to host a website that will allow this fine tool to be downloaded easily as an open source project. We will look forward to any contributions/PRs that new users want to submit and welcome feedback.
+
+1. git clone project
+2. npm i
+3. 
+
+Note: DockJS will show up as a small toolbar icon in the form of a coffee mug symbolizing your daily ritual for learning JavaScript. Instructions are provided in "I" (information). You are able to transpile ES6 code into Vanailla JS and vice versa. Happy coding!
+
+---
+
 [Original Assignment](http://frontend.turing.io/projects/imposter-syndrome.html)
+
+---
+
+If you're interested in exploring more resources, see Steve Kinney's talks on ["Building Desktop Applications with Node and Electron"](https://www.youtube.com/watch?v=rbSvc8_BHaw) on YouTube and ["Getting Started with Electron" on Vimeo"](https://vimeo.com/155240396)

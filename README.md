@@ -1,5 +1,11 @@
 # DockJS
 
+### 
+
+---
+
+<img width="1280" alt="screen shot 2017-02-12 at 10 11 49 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871721/c9ea3260-f170-11e6-85bf-9eb8a5c7c633.png">
+
 ```
 "Any application that can be written in JavaScript will eventually be written in JavaScript"
 — Atwood’s Law
@@ -9,13 +15,7 @@ Ryan & Kinan here (creators of DockJS) - We are both motivated to learn more and
 
 In this project, we designed an interpretation of a traditional desktop application using Electron, specifically a JavaScript REPL interface that fully functions offline and can be accessed in the dock in multiple platforms. Since the recent additions to the JavaScript library in ES6/ES7, we wanted to have a feature that allowed a user to upload code in vanilla JS that could be transpiled into ES6 and vice versa. 
 
----
-
-<img width="1280" alt="screen shot 2017-02-12 at 10 11 49 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871721/c9ea3260-f170-11e6-85bf-9eb8a5c7c633.png">
-
 <img width="1280" alt="screen shot 2017-02-12 at 10 14 15 pm" src="https://cloud.githubusercontent.com/assets/13802107/22871720/c9dac67c-f170-11e6-8efb-a83a0620580f.png">
-
----
 
 Since this project was terra incognita, a big part of the learning was to document our travels. To do that we each addressed different sides of the project:
 
@@ -28,18 +28,6 @@ Particular technical problems that we encountered and how we solved it. Also, wh
 
 * [Kinan's Post--Postmortem of an Electron App](https://medium.com/@iamkinansw/postmortem-of-an-electron-app-67c4493aa50d#.3ax8clc5x)
 * [Ryan's Post--Building a desktop application with Electron + CodeMirror](https://medium.com/@rcwestlake/building-a-desktop-app-with-electron-codemirror-93b681237e60#.e87qpoq77z)
-
----
-
-### Getting Started | Using DockJS
-
-DockJS is in its final stages of post-production and is on its way to the App Store & Google Play. We also plan to host a website that will allow this fine tool to be downloaded easily as an open source project. We will look forward to any contributions/PRs that new users want to submit and welcome feedback.
-
-1. git clone https://github.com/rcwestlake/dockjs.git
-2. npm i
-3. electron .
-
-Note: DockJS will show up as a small toolbar icon in the form of a coffee mug symbolizing your daily ritual for learning JavaScript. Instructions are provided in "I" (information). You are able to transpile ES6 code into Vanailla JS and vice versa. Happy coding!
 
 ---
 

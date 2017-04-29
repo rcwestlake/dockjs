@@ -1,6 +1,16 @@
 # DockJS
 
-### 
+### Getting Started | Using DockJS
+
+DockJS is in its final stages of post-production and is on its way to the App Store & Google Play. We also plan to host a website that will allow this fine tool to be downloaded easily as an open source project. We will look forward to any contributions/PRs that new users want to submit and welcome feedback.
+
+```
+1. git clone https://github.com/rcwestlake/dockjs.git
+2. npm i
+3. electron .
+```
+
+Note: DockJS will show up as a small toolbar icon in the form of a coffee mug symbolizing your daily ritual for learning JavaScript. Instructions are provided in "I" (information). You are able to transpile ES6 code into Vanailla JS and vice versa. Happy coding!
 
 ---
 

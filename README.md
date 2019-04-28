@@ -6,8 +6,9 @@ DockJS is in its final stages of post-production and is on its way to the App St
 
 ```
 1. git clone https://github.com/rcwestlake/dockjs.git
-2. npm i
-3. electron .
+2. cd dockjs
+3. npm i
+4. electron .
 ```
 
 Note: DockJS will show up as a small toolbar icon in the form of a coffee mug symbolizing your daily ritual for learning JavaScript. Instructions are provided in "I" (information). You are able to transpile ES6 code into Vanailla JS and vice versa. Happy coding!
